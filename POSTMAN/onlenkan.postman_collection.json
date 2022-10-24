@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "e59f98a1-2d23-403b-a54b-bd0457b5a201",
+		"name": "onlenkan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sertifikat",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sertifikat/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sertifikat",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Itamara Shofin",
+									"type": "default"
+								},
+								{
+									"key": "batch",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "fileSertif",
+									"type": "file",
+									"src": "/C:/Users/mlynt/Pictures/Ari Mulyanto.pdf"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sertifikat/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sertifikat",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Itamara",
+									"type": "default"
+								},
+								{
+									"key": "batch",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "fileSertif",
+									"type": "file",
+									"src": []
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sertifikat/edit/635627c20229593a54e2c40a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sertifikat",
+								"edit",
+								"635627c20229593a54e2c40a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sertifikat/delete/635627c20229593a54e2c40a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sertifikat",
+								"delete",
+								"635627c20229593a54e2c40a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "links",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/link/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"link",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"Ari Mulyanto\",\r\n    \"sosmed\" : {\r\n        \"linkedin\" : \"www.linkedin.com\",\r\n        \"instagram\" : \"www.linkedin.com\",\r\n        \"tiktok\" : \"www.linkedin.com\",\r\n        \"youtube\" : \"www.linkedin.com\",\r\n        \"facebook\" : \"www.linkedin.com\"\r\n    },\r\n    \"kontak\" : {\r\n        \"alamat\" : \"jl bahagia gg buntu\",\r\n        \"email\" : \"tes123@gmail.com\",\r\n        \"phoneNumber\" : \"085343776990\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/link/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"link",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"Ari\",\r\n    \"sosmed\" : {\r\n        \"linkedin\" : \"www.linkedin.com\",\r\n        \"instagram\" : \"www.instagram.com\",\r\n        \"tiktok\" : \"www.tiktok.com\",\r\n        \"youtube\" : \"www.youtube.com\",\r\n        \"facebook\" : \"www.facebook.com\"\r\n    },\r\n    \"kontak\" : {\r\n        \"alamat\" : \"jl bahagia\",\r\n        \"email\" : \"tes123@gmail.com\",\r\n        \"phoneNumber\" : \"6285343776990\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/link/edit/6355650adaa8c6402c01a51f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"link",
+								"edit",
+								"6355650adaa8c6402c01a51f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/link/delete/6355650adaa8c6402c01a51c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"link",
+								"delete",
+								"6355650adaa8c6402c01a51c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ari Mulyanto",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ari123@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "tes123",
+									"type": "default"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/mlynt/Pictures/ari.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/delete/63562203505655171880d155",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"delete",
+								"63562203505655171880d155"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "settings",
+			"item": [
+				{
+					"name": "edit user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ari muyanto",
+									"type": "default"
+								},
+								{
+									"key": "role",
+									"value": "member",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/mlynt/Pictures/1612976110325.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/settings/edit/63560da75a21c310d833a94c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"settings",
+								"edit",
+								"63560da75a21c310d833a94c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

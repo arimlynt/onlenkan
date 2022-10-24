@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "635627930229593a54e2c406"
+  },
+  "role": "admin",
+  "name": "Ari Mulyanto",
+  "email": "ari123@gmail.com",
+  "password": "$2a$10$IcTlFy5plZUg83oYnJUb2Ojg3rAYo9W8IiXmIZGhH.JtcUqJKExHq",
+  "foto": "4d83ac2411668d56cd372e6c8ba9b47c.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666590611354"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666590611354"
+    }
+  },
+  "__v": 0
+}]

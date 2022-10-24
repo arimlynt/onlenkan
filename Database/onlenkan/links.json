@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "635566661a8f2f0674b220a9"
+  },
+  "nama": "Ari Mulyanto",
+  "sosmed": {
+    "linkedin": "www.linkedin.com",
+    "instagram": "www.linkedin.com",
+    "tiktok": "www.linkedin.com",
+    "youtube": "www.linkedin.com",
+    "facebook": "www.linkedin.com"
+  },
+  "kontak": {
+    "alamat": "jl bahagia gg buntu",
+    "email": "tes123@gmail.com",
+    "phoneNumber": {
+      "$numberLong": "85343776990"
+    }
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666541158407"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666541158407"
+    }
+  },
+  "slug": "ari-mulyanto",
+  "__v": 0
+}]

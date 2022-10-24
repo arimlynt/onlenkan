@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "63555f691681ff3eeced4d1a"
+  },
+  "batch": 2,
+  "nama": "Ari Mulyanto",
+  "fileSertif": "ari-mulyanto.pdf",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666539369830"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666539369830"
+    }
+  },
+  "slug": "ari-mulyanto",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6356288865ed8a300446f574"
+  },
+  "batch": 2,
+  "nama": "Itamara Shofin",
+  "fileSertif": "itamara-shofin.pdf",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666590856451"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666590856451"
+    }
+  },
+  "slug": "itamara-shofin",
+  "__v": 0
+}]
